@@ -1,0 +1,104 @@
+/* Styles spécifiques pour les cartes */
+.card {
+  width: 100px;
+  height: 150px;
+  border: 1px solid #fff;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  margin: 10px;
+  color: black;
+  transition: transform 0.5s ease; /* Transition pour l'effet de zoom */
+}
+
+.card:hover {
+  transform: scale(1.2); /* Effet de zoom au survol */
+}
+
+.card .card-number {
+  color: black;
+}
+
+.card .card-suit {
+  font-size: 20px;
+}
+
+.card .card-suit.hearts,
+.card .card-suit.diamonds {
+  color: red;
+}
+
+.card .card-suit.clubs,
+.card .card-suit.spades {
+  color: rgb(0, 0, 0);
+}
+
+/* Styles spécifiques pour le deck */
+.deck {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card-row {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/* Styles génériques de l'application */
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-image: url('/home/e20210010618/my-app/src/Jeux-de-cartes.webp');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(20px + 2vmin);
+  color: white;
+  text-shadow: 16px 16px 16px rgba(230, 11, 11, 0.5);
+  border: 2px solid rgb(227, 221, 221);
+  padding: 20px;
+  border-radius: 10px;
+  box-sizing: border-box; 
+}
+.App-title {
+  background-color: rgb(240, 235, 232);
+  color:black;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(229, 15, 15, 0.1); /* Ajoutez une ombre légère pour le relief */
+}
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
